@@ -1,0 +1,4 @@
+Para compilar:
+
+GULP: npx gulp
+SCSS: npm run watch:css

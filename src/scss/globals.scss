@@ -15,6 +15,9 @@ html, body, main {
 body {
     background-color: $background-color;
     font-family: 'NeueMontreal-Regular', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -25,4 +28,17 @@ a {
 
 section {
     display: flex;
+    width: 100%;
+    max-width: 1250px;
+}
+
+/* Mudar a cor de fundo da seleção */
+::selection {
+    background-color: $blue; /* Substitua pela cor desejada */
+}
+
+/* Mudar a cor do texto da seleção */
+::-moz-selection {
+    background-color: $blue; /* Substitua pela cor desejada */
+    color: white; /* Cor do texto da seleção no Firefox */
 }
