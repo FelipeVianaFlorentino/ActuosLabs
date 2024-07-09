@@ -4,6 +4,7 @@
 
     display: flex;
     flex-direction: column;
+    margin-bottom: 600px;
 
     @media (max-width: 768px) {
         gap: 6rem;
@@ -68,16 +69,25 @@
     }
 
     .item-right {
-
-
-        background-repeat: no-repeat;
-        background-size: cover;
         border-radius: 1.5rem;
         height: 80%;
+        overflow: hidden;
+        position: relative;
 
         @media (max-width: 768px) {
             width: 100%;
         }
+    }
+
+    .item-right-inside {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     #service-1-image {
@@ -94,5 +104,14 @@
     
     #service-4-image {
         background-image: url('/src/img/services/service-mockup-4.png');
+    }
+}
+
+.pin-spacer {
+    justify-content: right;
+    align-items: center;
+
+    @media (max-width: 992px) {
+        flex-basis: 400px!important;
     }
 }
