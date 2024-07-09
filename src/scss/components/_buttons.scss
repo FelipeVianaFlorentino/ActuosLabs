@@ -23,6 +23,7 @@ button.small {
     border-radius: 50rem;
     background-color: transparent;
     position: relative;
+    overflow: hidden;
 
     .line-icon-menu {
         width: 1.5rem;
@@ -30,14 +31,21 @@ button.small {
         background-color: white;
         position: absolute;
         left: 50%;
-        transform: translate(-50%);
+        transform-origin: center;
     }
 
     .line-icon-menu:nth-child(1) {
         top: 0.75rem;
+        transform: translate(-50%, 0);
+    }
+
+    .line-icon-menu:nth-child(2) {
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .line-icon-menu:nth-child(3) {
         bottom: 0.75rem;
+        transform: translate(-50%, 0);
     }
 }
