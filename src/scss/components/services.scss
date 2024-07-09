@@ -1,0 +1,98 @@
+@import '../variables.scss';
+
+.services {
+
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        gap: 6rem;
+    }
+
+    .service-item {
+
+        @media (max-width: 992px) {
+            gap: 0;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column-reverse;
+            height: 85vh;
+        }
+
+        display: flex;
+        gap: 3rem;
+        height: 75vh;
+        max-height: 1250px;
+        align-items: center;
+        padding: 0 1rem;
+
+        h3 {
+            color: white;
+        }
+
+        h4 {
+            color: $cream-color;
+            font-weight: lighter;
+        }
+
+        .item-left, .item-right {
+            flex: 1;
+            // height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+        }
+
+        .item-left {
+
+            @media (max-width: 768px) {
+                flex: 0;
+                margin-top: 2rem;
+            }
+
+            h3 {
+                margin-top: 0.25rem;
+            }
+
+            p {
+                margin-top: 0.75rem;
+            }
+
+            button {
+                margin-top: 1.75rem;
+            }
+        }
+
+    }
+
+    .item-right {
+
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 1.5rem;
+        height: 80%;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    #service-1-image {
+        background-image: url('/src/img/services/service-mockup-1.png');
+    }
+    
+    #service-2-image {
+        background-image: url('/src/img/services/service-mockup-2.png');
+    }
+
+    #service-3-image {
+        background-image: url('/src/img/services/service-mockup-3.png');
+    }
+    
+    #service-4-image {
+        background-image: url('/src/img/services/service-mockup-4.png');
+    }
+}
