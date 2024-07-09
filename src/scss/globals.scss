@@ -30,7 +30,23 @@ section {
     display: flex;
     width: 100%;
     max-width: 1250px;
+
+    @media (max-width: 1250px) {
+        max-width: 992px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Mudar a cor de fundo da seleção */
 ::selection {
