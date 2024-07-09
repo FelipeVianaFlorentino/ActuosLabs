@@ -35,6 +35,7 @@ section {
 /* Mudar a cor de fundo da seleção */
 ::selection {
     background-color: $blue; /* Substitua pela cor desejada */
+    color: white;
 }
 
 /* Mudar a cor do texto da seleção */
