@@ -56,6 +56,10 @@ section {
     @media (max-width: 576px) {
         max-width: 425px;
     }
+    
+    @media (max-width: 425px) {
+        max-width: 100%;
+    }
 }
 
 
