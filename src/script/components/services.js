@@ -69,5 +69,6 @@ document.addEventListener('DOMContentLoaded', function( ) {
     handleResize();
 
     // Chamar a função ao redimensionar a janela
-    window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', handleResize);    
+    
 });
