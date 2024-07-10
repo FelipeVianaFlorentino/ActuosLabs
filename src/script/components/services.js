@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function( ) {
                 trigger: '.item-right',
                 markers: false,
                 pin: true,
-                end: 'bottom bottom',
+                end: 'bottom 90%',
                 endTrigger: '.services',
                 start: 'center 50%',
                 invalidateOnRefresh: true
