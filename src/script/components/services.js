@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', function( ) {
     const service1 = document.querySelector('#service-1-image');
     const service2 = document.querySelector('#service-2-image');
@@ -69,5 +71,6 @@ document.addEventListener('DOMContentLoaded', function( ) {
     handleResize();
 
     // Chamar a função ao redimensionar a janela
-    window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', handleResize);    
+    
 });
