@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function( ) {
     const itemsLeft = document.querySelectorAll('.item-left');
 
     function handleResize() {
-        if (window.innerWidth >= 768) {
+        if (window.innerWidth > 768) {
             // Executar código para tela maior ou igual a 768px
             service1.style.opacity = 1;
 
