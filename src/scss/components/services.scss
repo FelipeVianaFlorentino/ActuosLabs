@@ -98,12 +98,33 @@
         background-image: url('/src/img/services/service-mockup-2.png');
     }
 
+    #service-2-image-mobile {
+        background-image: url('/src/img/services/service-mockup-2.png');
+        @media (max-width: 768px) {
+            opacity: 1;   
+        }
+    }
+
     #service-3-image {
         background-image: url('/src/img/services/service-mockup-3.png');
+    }
+
+    #service-3-image-mobile {
+        background-image: url('/src/img/services/service-mockup-3.png');
+        @media (max-width: 768px) {
+            opacity: 1;   
+        }
     }
     
     #service-4-image {
         background-image: url('/src/img/services/service-mockup-4.png');
+    }
+
+    #service-4-image-mobile {
+        background-image: url('/src/img/services/service-mockup-4.png');
+        @media (max-width: 768px) {
+            opacity: 1;   
+        }
     }
 }
 
