@@ -1,0 +1,66 @@
+@import '../globals.scss';
+
+footer {
+    @extend %global-section;
+
+    padding: 6rem 0;
+    flex-direction: column;
+    gap: 4rem;
+
+    .content {
+
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 12rem;
+        }
+
+        nav.footer {
+            display: flex;
+            gap: 4rem;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 1.75rem;
+            }
+
+        }
+        
+    }
+
+    .socials {
+        button {
+            font-size: 1.25rem;
+        }
+    }
+
+
+    hr {
+        color: white;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        h1 {
+            color: $default-text;
+            line-height: 96px;
+        }
+
+        button {
+            margin-top: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-left: auto;
+        }
+    }
+}
