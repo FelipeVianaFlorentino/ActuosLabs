@@ -1,10 +1,21 @@
 @import '../variables.scss';
 
+.spacing {
+    width: 100%;
+    background-color: orange;
+    border: 5px dashed salmon;
+    z-index: 999;
+    opacity: 0.5;
+}
+
+
 .cases-wrapper {
     width: 100%;
     height: 100vh;
     display: flex;
     background-color: white;
+
+    opacity: 0.5;
 
     .cases {
         display: flex;
