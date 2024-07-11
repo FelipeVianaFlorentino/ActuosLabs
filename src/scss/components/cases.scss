@@ -1,38 +1,102 @@
 @import '../variables.scss';
 
-.spacing {
-    width: 100%;
-    background-color: orange;
-    border: 5px dashed salmon;
-    z-index: 999;
-    opacity: 0.5;
-}
-
-
 .cases-wrapper {
     width: 100%;
     height: 100vh;
     display: flex;
     background-color: white;
 
-    opacity: 0.5;
-
     .cases {
         display: flex;
         width: fit-content;
+        gap: 2.5rem;
         // border: 2px dashed salmon;
 
         .case-item.intro {
-            border: 1px solid orange;
+            align-self: center;
+        }
+
+        .case-item.outro {
+            align-self: center;
+            background-color: #F6F6F6;
+            margin-right: 3rem;
+            text-align: center;
+
+            button {
+                align-self: center;
+                margin: 0;
+                gap: 1.5rem;
+                padding-right: 1rem;
+                img {
+                    align-self: center;
+                }
+            }
         }
     
         .case-item {
-            border: 1px solid orange;
-            width: 550px;
+            min-width: 650px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             gap: 2rem;
+            box-sizing: border-box;
+            align-self: center;
+            height: 100%;
+            max-height: 75%;
+            min-height: 300px;
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+
+            &__content {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+
+                h4 {
+                    color: white;
+                    font-size: 2rem;
+                }
+    
+                .case-tags {
+                    display: flex;
+                    height: fit-content;
+                    gap: 0.5rem;
+
+
+                    p {
+                        color: white;
+                        border: 1px solid white;
+                        font-size: 1rem;
+                        text-wrap: nowrap;
+                        padding: 0.5rem 2rem;
+                        border-radius: 100px;
+                        background-color: rgba($color: #000000, $alpha: 0.1);
+                        backdrop-filter: blur(20px);
+                    }
+                }
+            }
+        }
+
+        .case-item:nth-of-type(1) {
+            padding: 4rem;
+        }
+
+        .case-item.case-image {
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-direction: row;
+            align-items: end;
+        }
+
+        .case-item:nth-of-type(2) {
+            background-image: url(/src/img/cases/case-flashguys.png);
+        }
+        .case-item:nth-of-type(3) {
+            background-image: url(/src/img/cases/case-ados.png);
+        }
+        .case-item:nth-of-type(4) {
+            background-image: url(/src/img/cases/case-fintuit.png);
         }
     }
 
@@ -40,5 +104,10 @@
 
     h2, p {
         color: $background-color;
+    }
+
+    button {
+        align-self: baseline;
+        margin-top: 6rem;
     }
 }

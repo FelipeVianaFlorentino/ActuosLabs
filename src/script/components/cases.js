@@ -1,35 +1,3 @@
-// document.addEventListener('DOMContentLoaded', () => {
-
-//     const casesWidth = document.querySelector('.cases').offsetWidth;
-
-//     function setWidthToScroll() {
-//         widthToScroll = casesWidth - window.innerWidth;
-//     }
-
-
-//     window.addEventListener('resize', setWidthToScroll)
-//     setWidthToScroll();
-
-    
-//     const tlCases = gsap.timeline({
-//         scrollTrigger: {
-//             trigger: '.cases-wrapper',
-//             markers: true,
-//             pin: true,
-//             scrub: true
-//         }
-//     });
-
-//     tlCases.to('.cases', {
-//         x: -widthToScroll
-//     });
-
-//     const spacing = document.querySelector('.spacing');
-//     const spacingHeight = casesWidth - window.innerWidth - window.innerHeight;
-//     spacing.style.height = spacingHeight + 'px';
-
-// })
-
 document.addEventListener('DOMContentLoaded', () => {
 
     // team spacing
@@ -42,12 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const teams = document.querySelector('.case-item');
 
-    const teamsTL = gsap.timeline({
+    gsap.timeline({
         scrollTrigger: {
             trigger: ".cases-wrapper",
             start: "top top",
-            end: "bottom top",
-            markers: true,
+            end: "bottom 60%",
+            markers: false,
             scrub: true
         }
     }).to(teams, {
