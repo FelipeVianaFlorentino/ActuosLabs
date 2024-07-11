@@ -1,121 +1,33 @@
-.case-wrapper {
-    display: flex;
-    overflow: hidden;
-    background-color: white;
+@import '../variables.scss';
+
+.cases-wrapper {
     width: 100%;
     height: 100vh;
-    align-items: center;
-}
-
-.case-wrapper p {
-    font-size: 24px;
-    font-weight: 400;
-    color: white;
-}
-
-
-.case-wrapper h5 {
-    color: white;
-}
-
-
-.cases {
-    display: flex; 
-    height: 100%;
-    align-items: center;
-    gap: 24px;
-    /* border: 5px dashed blue; */
-}
-
-
-.case-block {
-    min-width: 600px;
     display: flex;
-    gap: 32px;
-    min-height: 60vh;
-    max-height: 600px;
-}
+    background-color: white;
 
+    .cases {
+        display: flex;
+        width: fit-content;
+        // border: 2px dashed salmon;
 
+        .case-item.intro {
+            border: 1px solid orange;
+        }
+    
+        .case-item {
+            border: 1px solid orange;
+            width: 550px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+        }
+    }
 
+   
 
-.pessoas {
-    height: 100%;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background-image: url('/src/img/cases/case-flashguys.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    align-items: end;
-    padding: 48px 36px;
-    gap: 0;
-}
-
-
-.case-wrapper h1, .case-wrapper p {
-    color: var(--main-dark);
-}
-
-
-
-.cases button {
-    border: 1px solid var(--blue-main);
-    font-weight: 500;
-    font-size: 24px;
-    margin-top: auto;
-}
-
-
-
-.case-cargo {
-    border: 1px solid white;
-    padding: 8px 24px;
-    border-radius: 50px;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: white;
-    display: inline-block;
-    min-width: fit-content;
-}
-
-.case-cargo {
-    margin-left: auto;
-}
-.case-cargo:last-child {
-    margin-left: 10px;
-}
-
-
-.case-content {
-    padding: 0 64px;
-    height: fit-content;
-    min-width: 30vw;
-    /* border: 3px lime solid; */
-    display: flex;
-    flex-direction: column;
-}
-
-.case-content:last-child {
-    min-width: 40vw;
-    margin-right: 32px;
-    gap: 24px;
-    align-items: center;
-}
-
-.case-content:last-child button {
-    margin-top: 0;
-    align-self: center;
-    justify-content: center;
-    margin-bottom: auto;
-    align-items: baseline;
-    line-height: 0;
-}
-
-.case-content:last-child button span {
-    margin-left: 12px;
-}
-
-.case-content:last-child h2 {
-    margin-top: auto;
+    h2, p {
+        color: $background-color;
+    }
 }
