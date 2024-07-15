@@ -6,14 +6,29 @@
     display: flex;
     background-color: white;
 
+    @media (max-width: 768px) {
+        height: fit-content;
+        justify-content: center;
+    }
+
     .cases {
         display: flex;
         width: fit-content;
         gap: 2.5rem;
-        // border: 2px dashed salmon;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            max-width: 567px;
+        }
 
         .case-item.intro {
             align-self: center;
+
+            @media (max-width: 768px) {
+                min-width: 100%;
+                max-height: none;
+                min-height: min-content;
+            }
         }
 
         .case-item.outro {
@@ -46,6 +61,12 @@
             min-height: 300px;
             border-radius: 1.5rem;
             padding: 2.5rem;
+
+            @media (max-width: 768px) {
+                min-width: 100%;
+                max-height: none;
+                min-height: 492px;
+            }
 
             &__content {
                 display: flex;
@@ -87,6 +108,12 @@
             background-size: cover;
             flex-direction: row;
             align-items: end;
+
+            @media (max-width: 768px) {
+                min-width: 100%;
+                max-height: none;
+                min-height: 492px;
+            }
         }
 
         .case-item:nth-of-type(2) {
@@ -111,3 +138,4 @@
         margin-top: 6rem;
     }
 }
+
